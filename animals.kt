@@ -1,35 +1,37 @@
-open class Animal {
-    open val image = ""
-    open val food = ""
-    open val habitat = ""
+abstract class Animal {
+    abstract val image = ""
+    abstract val food = ""
+    abstract val habitat = ""
     var hunger = 10
 
-    open fun makeNoise() {
+    abstract fun makeNoise()
         println("The Animal is making a noise")
-    }
 
-    open fun eat() {
+
+    abstract fun eat()
         println("the animal is eating")
-    }
 
-    open fun roam() {
+
+    abstract fun roam()
         println("the animal is roaming")
-    }
 
-    fun sleep() {
+
+    abstract sleep() {
         println("the animal is sleeping")
     }
+ }
 
-    open class Canine: Animal() {
+
+
+    abstract class Canine: Animal(){
         override fun roam() {
             println("the canine is roaming0")
         }
-    }
-    open class Feline : Animal() {
+}
+
+    abstract class Feline: Animal(){
 
         override fun roam() {
             println("The Feline is Romaing")
         }
     }
-    
-}

@@ -1,4 +1,4 @@
-class Fox : Animal() {
+open class Fox : Canine() {
     override val image = "Fox.jpg"
     override val food = "grass"
     override val habitat = "land"

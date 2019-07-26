@@ -1,4 +1,4 @@
-class Lion : Animal() {
+ open class Lion : Feline() {
     override val image = "Lion.jpg"
     override val food = "meat"
     override val habitat = "land"
@@ -11,4 +11,3 @@ class Lion : Animal() {
 
     }
     }
-}

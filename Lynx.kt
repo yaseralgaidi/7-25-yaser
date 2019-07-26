@@ -1,4 +1,4 @@
-class Lynx : Animal() {
+open class Lynx : Animal() {
     override val image = "Lynx.jpg"
     override val food = "meat"
     override val habitat = "land"
@@ -13,6 +13,3 @@ class Lynx : Animal() {
     }
 }
 }
-
-
-        var one = "ace"

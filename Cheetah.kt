@@ -1,4 +1,4 @@
-class Cheetah : Animal() {
+open class Cheetah : Feline() {
     override val image = "Cheetah.jpg"
     override val food = "meat"
     override val habitat = "land"
